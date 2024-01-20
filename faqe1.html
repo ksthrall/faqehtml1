@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-><html>
+<html>
     <head> 
-        test
+        <style>
+            /*/ koka /*/
+            .header{ 
+                padding: 50px;
+                background: #cc3146;
+                color:white;
+                font-family:Arial;
+                text-align: center;
+                border-radius: 30px;
+
+            }
+            /*/ butoni dropdown/*/
+            .butoni{
+                background-color: #ca4657;
+                color:white;
+                padding:10px;
+                font-size: 20px;
+                border: none;
+            }
+
+            .brenda{
+                display:none;
+                position: absolute;
+                background-color: #e0e0e0;
+            }
+            .brenda a{
+                color:rgb(75, 74, 73);
+                display:block;
+                min-width: 100px;
+                text-decoration: none;
+
+            }
+            .dropdown{
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown:hover .brenda{
+                display:block;
+            }
+            /*/
+            section me filma
+            /*/
+            .filmat p{
+                border:solid;
+                overflow-x: scroll;
+                width:500px;
+                position: relative;
+                left: 350px;
+                background-color:gray ;  
+
+
+
+                
+            }
+            p.mes{
+                font-size: 75px;
+                left: 300px;
+                position: relative;
+            }
+        </style>
+        <title> KinemaKS</title>
     </head>
     <body>  
-        <p> 
-            test
-        </p>
+        <a id="top"></a>
+        <div class="header">
+            <h1>KinemaKS</h1>
+            <p><strong>Magjia e Kinemasë: Ku ëndrrat bëhen realitet!</p>
+                <div class="dropdown">
+                    <button class="butoni">Zhanri</button>
+                    <div class="brenda">
+                        <a href="#Mystery">Mystery</a>
+                        <a href="#Action">Action</a>
+
+                    </div>
+                </div>
+        </div>
+        <div class="main">
+            <p class="mes">Action</p>
+            <div class="filmat">
+                <p><a href="orare.html"><img src="spiderman.jpg"></a></p>
+
+
+            </div>
+        </div>
+
+        <a href="#top">Shko ne Fillim</a>
     </body>
 </html>
