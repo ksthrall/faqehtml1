@@ -2,8 +2,23 @@
 <html>
     <head> 
         <style>
-            /*/ koka /*/
-            .header{ 
+            /*/
+            smooth scroll per back to top 
+            /*/
+            html {
+                scroll-behavior: smooth;
+            }
+            /*/
+            jo scroll majtas djathas
+            /*/
+            body{
+                max-width: 100%;
+                overflow-x:hidden ;
+            }
+            /*/ 
+            koka
+            /*/
+            .header { 
                 padding: 50px;
                 background: #cc3146;
                 color:white;
@@ -12,7 +27,9 @@
                 border-radius: 30px;
 
             }
-            /*/ butoni dropdown/*/
+            /*/ 
+            butoni dropdown
+            /*/
             .butoni{
                 background-color: #ca4657;
                 color:white;
@@ -45,47 +62,135 @@
             /*/
             .filmat p{
                 border:solid;
-                overflow-x: scroll;
-                width:500px;
+                overflow: auto;
+                display: flex;
+                flex-wrap: nowrap;
+                width: 1000px;
                 position: relative;
                 left: 350px;
-                background-color:gray ;  
+                background-color:rgb(223, 223, 223) ;  
+
 
 
 
                 
             }
             p.mes{
-                font-size: 75px;
+                font-family: Arial;
+                font-size: 40px;
                 left: 300px;
                 position: relative;
+            }
+            img{
+                width: 300px;
+                height: 400px;;
+                flex:0 0 auto;
             }
         </style>
         <title> KinemaKS</title>
     </head>
+
+
     <body>  
         <a id="top"></a>
+        
         <div class="header">
             <h1>KinemaKS</h1>
             <p><strong>Magjia e Kinemasë: Ku ëndrrat bëhen realitet!</p>
                 <div class="dropdown">
                     <button class="butoni">Zhanri</button>
                     <div class="brenda">
-                        <a href="#Mystery">Mystery</a>
                         <a href="#Action">Action</a>
+                        <a href="#Comedy">Comedy</a>
+                        <a href="#Mystery">Mystery</a>
+                        <a href="#Sci-Fi">Sci-Fi</a>
+                        <a href="#Animated">Te Animuar</a>
 
                     </div>
                 </div>
         </div>
-        <div class="main">
-            <p class="mes">Action</p>
-            <div class="filmat">
-                <p><a href="orare.html"><img src="spiderman.jpg"></a></p>
 
+
+        <div class="main">
+
+            <a id="Action"></a>
+            <p class="mes">Action</p>
+
+            <div class="filmat">
+                <p>
+                    <a href="orare.html"><img src="spiderman.jpg"></a>
+                    <a href="orare.html"><img src="batman.jpg"></a>
+                    <a href="orare.html"><img src="indiana.jpeg"></a>
+                    <a href="orare.html"><img src="MI.jpg"></a>
+                    <a href="orare.html"><img src="killer.jpg"></a>
+                    <a href="orare.html"><img src="mpayne.jpg"></a>
+
+                </p>
+            </div>
+            <br>
+
+            <a id="Comedy"></a>
+            <p class="mes">Comedy</p>
+
+            <div class="filmat">
+                <p>
+                    <a href="orare.html"><img src="homealone.jpeg"></a>
+                    <a href="orare.html"><img src="barbie.jpg"></a>
+                    <a href="orare.html"><img src="shrek.jpg"></a>
+                    <a href="orare.html"><img src="freeguy.jpg"></a>
+                    <a href="orare.html"><img src="jumanji.jpg"></a>
+                    <a href="orare.html"><img src="paul.jpg"></a>
+                </p>
+            </div>
+            <br>
+
+            <a id="Mystery"></a>
+            <p class="mes">Mystery</p>
+
+            <div class="filmat">
+                <p>
+                    <a href="orare.html"><img src="inception.jpg"></a>
+                    <a href="orare.html"><img src="davinki.jpg"></a>
+                    <a href="orare.html"><img src="mm2.jpg"></a>
+                    <a href="orare.html"><img src="holmes.jpg"></a>
+                    <a href="orare.html"><img src="us.jpg"></a>
+                    <a href="orare.html"><img src="mazerun.jpg"></a>
+                </p>
+            </div>
+            <br>
+
+            <a id="Sci-Fi"></a>
+            <p class="mes">Sci-Fi</p>
+
+            <div class="filmat">
+                <p>
+                    <a href="orare.html"><img src="interstellar.jpg"></a>
+                    <a href="orare.html"><img src="robot.jpg"></a>
+                    <a href="orare.html"><img src="starwars.jpg"></a>
+                    <a href="orare.html"><img src="oblivion.jpg"></a>
+                    <a href="orare.html"><img src="bladerunner.jpg"></a>
+                    <a href="orare.html"><img src="watchmen.jpg"></a>    
+                </p>
+            </div>
+            <br>
+
+            <a id="Animated"></a>
+            <p class="mes">Të Animuar</p>
+
+            <div class="filmat">
+                <p>
+                    <a href="orare.html"><img src="grinch.jpg"></a>
+                    <a href="orare.html"><img src="flushedaway.jpg"></a>
+                    <a href="orare.html"><img src="spirited.jpg"></a>
+                    <a href="orare.html"><img src="adventchildren.jpg"></a>
+                    <a href="orare.html"><img src="kizum.jpeg"></a>
+                    <a href="orare.html"><img src="nge.jpg"></a> 
+                </p>
 
             </div>
         </div>
 
-        <a href="#top">Shko ne Fillim</a>
+
+       <button class="butoni"><a href="#top" style="text-decoration: none; color: white;">Shko ne Fillim</a></button>
     </body>
 </html>
