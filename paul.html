@@ -264,7 +264,7 @@
 
         <div>
             <p>Bli Bileten</p>
-             <form>
+            <form onsubmit="return false">
                 <label for="emri">Emri:</label><br>
                 <input type="text" id="emri" name="emri" required="required"><br>
 
@@ -275,12 +275,12 @@
                 <input type="date" id="data" name="data" min="2024-01-29" max="2024-02-05" required="required"><br><br>
 
                 <label for="salla">Salla:</label>
-                <input type="radio" id="B5" name="salla" value="B5">
-                <label for="B5">B5</label>
-                <input type="radio" id="C2" name="salla" value="C2">
-                <label for="C2">C2</label> 
-                <input type="radio" id="D2" name="salla" value="D2">
-                <label for="D2">D2</label><br><br>
+                <input type="radio" id="A1" name="salla" value="A1">
+                <label for="A1">A1</label>
+                <input type="radio" id="A3" name="salla" value="A3">
+                <label for="A3">A3</label> 
+                <input type="radio" id="B2" name="salla" value="B2">
+                <label for="B2">B2</label><br><br>
 
                 <label for="ora">Ora e Nisjes:</label>
                 <input type="time" id="ora" name="ora" required="required"><br><br>
@@ -296,7 +296,8 @@
                 <label for="CVV">CVV:</label>
                 <input type="password"  id="CVV" name="CVV" minlength="3" maxlength="3" required="required">
                 <p id="demo" style="color: red;"></p>
-                <input type="submit" value="Submit" onclick="Konfirmo()">
+                <input type="submit" value="Shtyp per te kontrolluar">
+                <input type="submit" value="Konfirmo!" onclick="Konfirmo()">
 
 
             </form>

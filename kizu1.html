@@ -264,7 +264,7 @@
 
         <div>
             <p>Bli Bileten</p>
-             <form>
+             <form onsubmit="return false">
                 <label for="emri">Emri:</label><br>
                 <input type="text" id="emri" name="emri" required="required"><br>
 
@@ -296,7 +296,8 @@
                 <label for="CVV">CVV:</label>
                 <input type="password"  id="CVV" name="CVV" minlength="3" maxlength="3" required="required">
                 <p id="demo" style="color: red;"></p>
-                <input type="submit" value="Submit" onclick="Konfirmo()">
+                <input type="submit" value="Shtyp per te kontrolluar">
+                <input type="submit" value="Konfirmo!" onclick="Konfirmo()">
 
 
             </form>
